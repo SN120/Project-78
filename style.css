@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+    background-color: lightcoral;
+}
+
+img {
+    height: 460.8px;
+    width: 211.2px;
+}
+button{
+    height: 50px;
+    width: 100px;
+    border-radius: 25px;
+    background-color: pink;
+    font-size: large;
+}

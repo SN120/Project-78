@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>Project-78</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <h1>My Family Book</h1>
+    <img id="image" src="Me.jpg">
+    <h3 id="name">Siddhant Narayanan (me)</h3>
+    <button onclick="update();">NEXT</button>
+
+    <script>
+        var x=0;
+        var images = ["Me.jpg", "Mama.jpg", "papa.jpg", "amma1.jpg", "amma2.jpg"];
+        var names = ["Siddhant Narayanan (me)", "Sharayu Narayanan (mother)", "Giridhar Narayanan (father)", "R.Satyabama (paternal grandmother)", "Madvi Patil (maternal grandmother)"];
+        function update(){
+            x = x+1;
+
+            if(x == 5){
+                x = 0;
+            }
+            document.getElementById("image").src = images[x];
+            document.getElementById("name").innerHTML = names[x];
+        }
+    </script>
+</body>
+
+</html>
